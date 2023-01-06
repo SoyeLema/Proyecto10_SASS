@@ -4,12 +4,11 @@ $font-family-base: 'Bellefair', serif;
 // scss-docs-start theme-color-variables copiado desde bootstrap
 $primary: #fd6d0d;
 $secondary: #9d71e6;
-$success: #11f54a;
-$info: #19e0e7;
+$success: #41ecd0;
+$info: #c4437f;
 $warning: rgb(217, 255, 0);
-$danger: #f30909;
 $light: rgb(238, 235, 235);
-$dark: rgb(105, 105, 105);
+$dark: rgb(32, 13, 37);
 $oscurito: #292929;
 // scss-docs-end theme-color-variables
 
@@ -20,7 +19,6 @@ $theme-colors: (
     "success": $success,
     "info": $info,
     "warning": $warning,
-    "danger": $danger,
     "light": $light,
     "dark": $dark,
     "oscurito": $oscurito
@@ -39,13 +37,28 @@ $theme-colors: (
     width: 18rem;
 }
 
+.titulo {
+    font-style: italic;
+    text-decoration: underline 1px;
+}
+
+.parrafo {
+    border: dashed 1px $info;
+    padding: 5px;
+}
+
 /* Uso de extend */
 .card {
     @extend .estilodarks;
 
     .card-title {
         color: $warning;
+        @extend .titulo;
         /* uso de nesting */
+    }
+
+    .card-text {
+        @extend .parrafo;
     }
 }
 
@@ -63,8 +76,20 @@ $theme-colors: (
 /* Uso del extend */
 .btn {
     @extend .estiloboton;
+
+    &:hover {
+        background-color: $info;
+        color: $success;
+        transition: .5s;
+    }
 }
 
+
+/* ----------------------- */
+
+body {
+    background-color: $dark;
+}
 
 .container {
     display: flex;
