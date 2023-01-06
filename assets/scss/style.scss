@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+$font-family-base: 'Bellefair', serif;
+
+// scss-docs-start theme-color-variables copiado desde bootstrap
+$primary: #fd6d0d;
+$secondary: #9d71e6;
+$success: #11f54a;
+$info: #19e0e7;
+$warning: rgb(217, 255, 0);
+$danger: #f30909;
+$light: rgb(179, 179, 179);
+$dark: rgb(105, 105, 105);
+$oscurito: #292929;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map copiado desde bootstrap
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "oscurito": $oscurito
+);
+// scss-docs-end theme-colors-map
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.card {
+    background-color: $oscurito;
+    color: $secondary;
+    @extend .card;
+}
+
+.btn {
+    cursor: pointer;
+    color: $light;
+    transition: .5s;
+    @extend .btn;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 30px;
+    width: auto;
+    height: 100vh;
+}
