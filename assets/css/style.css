@@ -10856,6 +10856,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* Clase personalizada */
 .estilodarks, .card {
   background-color: #292929;
   color: #9d71e6;
@@ -10863,6 +10864,13 @@ textarea.form-control-lg {
   width: 18rem;
 }
 
+/* Uso de extend */
+.card .card-title {
+  color: rgb(217, 255, 0);
+  /* uso de nesting */
+}
+
+/* Otra clase personalizada */
 .estiloboton, .btn {
   cursor: pointer;
   color: rgb(238, 235, 235);
@@ -10870,6 +10878,7 @@ textarea.form-control-lg {
   background-color: #fd6d0d;
 }
 
+/* Uso del extend */
 .container {
   display: flex;
   justify-content: center;
