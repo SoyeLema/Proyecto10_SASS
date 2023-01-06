@@ -30,22 +30,27 @@ $theme-colors: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-.darkcard {
+.estilodarks {
     background-color: $oscurito;
     color: $secondary;
     font-size: large;
     width: 18rem;
-    @extend .card;
 }
 
-.boton {
+.card {
+    @extend .estilodarks;
+}
+
+.estiloboton {
     cursor: pointer;
     color: $light;
     transition: .5s;
     background-color: $primary;
-    @extend .btn
 }
 
+.btn {
+    @extend .estiloboton;
+}
 
 .container {
     display: flex;
