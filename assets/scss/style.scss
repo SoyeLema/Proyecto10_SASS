@@ -8,7 +8,7 @@ $success: #11f54a;
 $info: #19e0e7;
 $warning: rgb(217, 255, 0);
 $danger: #f30909;
-$light: rgb(179, 179, 179);
+$light: rgb(238, 235, 235);
 $dark: rgb(105, 105, 105);
 $oscurito: #292929;
 // scss-docs-end theme-color-variables
@@ -30,18 +30,22 @@ $theme-colors: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-.card {
+.darkcard {
     background-color: $oscurito;
     color: $secondary;
+    font-size: large;
+    width: 18rem;
     @extend .card;
 }
 
-.btn {
+.boton {
     cursor: pointer;
     color: $light;
     transition: .5s;
-    @extend .btn;
+    background-color: $primary;
+    @extend .btn
 }
+
 
 .container {
     display: flex;
