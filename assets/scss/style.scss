@@ -33,8 +33,6 @@ $theme-colors: (
 .estilodarks {
     background-color: $oscurito;
     color: $secondary;
-    font-size: large;
-    width: 18rem;
 }
 
 .titulo {
@@ -49,6 +47,8 @@ $theme-colors: (
 
 /* Uso de extend */
 .card {
+    font-size: large;
+    width: 18rem;
     @extend .estilodarks;
 
     .card-title {

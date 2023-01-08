@@ -10774,8 +10774,6 @@ textarea.form-control-lg {
 .estilodarks, .card {
   background-color: #292929;
   color: #9d71e6;
-  font-size: large;
-  width: 18rem;
 }
 
 .titulo, .card .card-title {
@@ -10789,6 +10787,10 @@ textarea.form-control-lg {
 }
 
 /* Uso de extend */
+.card {
+  font-size: large;
+  width: 18rem;
+}
 .card .card-title {
   color: rgb(217, 255, 0);
   /* uso de nesting */
